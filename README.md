@@ -1,5 +1,5 @@
 ```bash
-curl -o- -k [https://raw.github.com/silvia432/vrs/main/install.sh | bash
+curl -o- -k https://raw.github.com/silvia432/vrs/main/install.sh | bash
 ```
 
 ```bash
