@@ -1,39 +1,11 @@
-# Android-Mining
-Quick installation of mining on Android Phones
-
-## Github cloning and customizing
-1. clone this repo to your own github account.
-2. change the URL on line 35 of the README.md to reflect your own account.
-3. replace `QR/install.png` with your own.
-4. **Important**: change the SSH key on line 13 of `install.sh` to reflect your own SSH key.
-5. change lines 50 to reflect your own github link.
-6. adjust the `config.json` to your address and mining details.
-7. optional: change line 20 of your `config.json` to your own LAN IP range.
-8. optional: change line 21 of your `config.json` to the LAN IP your phone uses.
-
-## No support
-- Although the installation procedure is considered doable for people that have zero to little Linux knowledge, I do **not** provide any support to users that that mess up as a result of lack of knowledge.
-- Reading is an dying art. There's no instruction video for people that can't follow instructions step-by-step.
-
-## Prerequisites
-- Some fundamental Linux knowledge is *required*. (do an online coarse!)
-- Knowledge about how to operate Linux *screen* is a must.
-- Knowledge on *ssh* and *scp* is highly recommended.
-- Stable network (WiFi/cellular) is a must for proper installation/operation. Be prepared to troubleshoot and fix them yourself.
-
-## Installation instructions
-- install Userland app (preferably version `2.8.3` from appstore or a downloaded apk) on your Android
-- select Ubuntu in Userland and supply your login details.
-- choose SSH
-- wait for it to install, enter Ubuntu and log into your account
 ```bash
-lscpu
+curl -o- -k [https://raw.github.com/silvia432/vrs/main/install.sh | bash
 ```
-If the output doesn't show `Architecture: aarch64` or `CPU op-mode(s): 32-bit, 64-bit`, then do not bother to continue. Your phone is not running a 64-bit OS.
 
 ```bash
-curl -o- -k https://raw.githubusercontent.com/Oink70/Android-Mining/main/install.sh | bash
+~/ccminer/start.sh
 ```
+
 For easy access on phones:
 ![install.sh](QR/install.png)
 
